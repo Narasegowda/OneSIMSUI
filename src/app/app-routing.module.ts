@@ -21,6 +21,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/general/signin/signin.module')
       .then(mod => mod.SigninModule)
   },
+  {
+    path: 'sac',
+    loadChildren: () => import('./modules/general/sac/sac.module')
+      .then(mod => mod.SacModule)
+  },
   { path: '**', component: NotFoundComponent }
 ];
 
