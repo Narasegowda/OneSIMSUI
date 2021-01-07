@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-starter';
-  version = 'Angular version 11.0.4';
+  title = 'OneSIMS';
+  version = 'Angular version 10';
 }

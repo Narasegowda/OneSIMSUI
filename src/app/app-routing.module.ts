@@ -1,29 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './modules/general/home/home.component';
-import { NotFoundComponent } from './modules/general/not-found/not-found.component';
+import { DashboardComponent } from './modules/feature/dashboard/dashboard.component';
+import { NotFoundComponent } from './modules/feature/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, },
+  { path: '', component: DashboardComponent, },
   {
-    path: 'contact',
-    loadChildren: () => import('./modules/general/contact/contact.module')
-      .then(mod => mod.ContactModule)
+    path: 'appraisal',
+    loadChildren: () => import('./modules/feature/appraisal/appraisal.module')
+      .then(mod => mod.AppraisalModule)
   },
   {
-    path: 'about',
-    loadChildren: () => import('./modules/general/about/about.module')
-      .then(mod => mod.AboutModule)
+    path: 'dealershipConfiguration',
+    loadChildren: () => import('./modules/feature/dealershipConfiguration/dealershipConfiguration.module')
+      .then(mod => mod.DealershipConfigurationModule)
   },
   {
-    path: 'signin',
-    loadChildren: () => import('./modules/general/signin/signin.module')
-      .then(mod => mod.SigninModule)
+    path: 'login',
+    loadChildren: () => import('./modules/feature/login/login.module')
+      .then(mod => mod.LoginModule)
   },
   {
     path: 'sac',
-    loadChildren: () => import('./modules/general/sac/sac.module')
+    loadChildren: () => import('./modules/feature/sac/sac.module')
       .then(mod => mod.SacModule)
   },
   { path: '**', component: NotFoundComponent }
