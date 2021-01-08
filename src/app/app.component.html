@@ -1,4 +1,4 @@
-<div class="app">
+<!-- <div class="app">
   <header>
     <section>
       <h1>{{ title }}</h1>
@@ -23,4 +23,39 @@
     <a href="https://www.carcash.com/">&copy; 2021 - www.carcash.com</a>
   </footer>
 
+</div> -->
+
+<div class="sidenav">
+  <a routerLink="/"><i class="fa fa-fw  fa-home p-1"></i>Dashboard</a>
+  <a routerLink="/dealershipConfiguration"><i class=" p-1 fa  fa-fw fa-wrench"></i>DealershipConfiguration</a>
+  <a routerLink="/appraisal"><i class="fa fa-fw fa-list p-1"></i>Appraisal</a>
+  <a routerLink="/login"><i class="fa fa-fw fa-user p-1"></i>login</a>
+  <a routerLink="/sac"><i class="fa fa-fw fa-envelope p-1"></i>SAC</a>  
 </div>
+
+<div class="header">
+  <!-- <h2 class="" style="color: #F3F5F6;margin-bottom: 0.2em;">{{ title }}</h2>
+    <h5 style="font-size: 1em;margin-top: 0.1em;color: #acaab5;"> {{ version }}</h5> -->
+    <a href="" style="color: #F3F5F6;" class="logo">{{ title }}</a>
+ 
+</div>
+
+<div class="main row">
+  <div class="col-4"></div>
+  <div class="col-4">
+    <!-- <h2 class="text-center" style="color: #F3F5F6;margin-bottom: 0.2em;">{{ title }}</h2> -->
+     <h5 style="font-size: 1em;margin-top: 0.1em;color: #acaab5;"> {{ version }}</h5> 
+ 
+    <main  style="color: #F3F5F6;">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
+  <!-- <footer>
+    <a href="https://www.carcash.com/">&copy; 2021 - www.carcash.com</a>
+  </footer> -->
+  <div class="footer">
+    <a style="color:#F3F5F6; font-size: 0.8em" href="https://www.carcash.com/">&copy; 2021 - www.carcash.com</a>
+  </div>
+</div>
+
